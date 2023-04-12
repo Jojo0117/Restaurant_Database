@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Customers</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		p {
+			margin: 10px 0;
+			text-align: center;
+			padding: 0 20px;
+			color: #666;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		form {
+			margin: 20px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			max-width: 400px;
+		}
+
+		p:first-of-type {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"], input[type="email"], input[type="integer"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			font-size: 16px;
+			color: #333;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+
+		.required-field::after {
+			content: "*";
+			color: red;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>New Customers</h1>
+	<p>Options labelled with <span class="required-field">*</span> indicates required field</p>
+
+	<form action="insert.php" method="post"> 
+		<p>First Name<span class="required-field">*</span>: </p> 
+		<input type="text" name="fname" required>
+		<p>Last Name<span class="required-field">*</span>: </p> 
+		<input type="text" name="lname" required>
+		<p>Email Address<span class="required-field">*</span>: </p> 
+		<input type="email" name="email" required>
+		<p>Cell: </p> 
+		<input type="integer" name="cell">
+		<p>Street: </p> 
+		<input type="text" name="street"> 
+		<p>City: </p> 
+		<input type="text" name="city"> 
+		<br>
+		<br>
+		<input type="submit">
+	</form> 
+</body>
+</html>

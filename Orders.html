@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orders</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		p {
+			margin: 10px 0;
+			padding: 0 20px;
+			color: #666;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: center;
+		}
+
+		form {
+			margin: 20px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			max-width: 400px;
+		}
+
+		p:first-of-type {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type="date"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			font-size: 16px;
+			color: #333;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+	</style>
+</head>
+
+<body>
+   <h1>Orders</h1>
+   <p>This returns the related infos for a particular date.</p>
+
+   <form method="post" action="show_orders.php">   
+     <p>Date:</p>
+     <input type="date" name="date">  <br> <br>
+     <input type="submit">
+	 <br>
+   </form> 
+</body>
+</html>
+

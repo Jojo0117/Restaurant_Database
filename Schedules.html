@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin: 5px;
+}
+
+input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="integer"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+</style>
+<body>
+   <h1>Employee Schedules</h1>
+   
+   <form action="days.php" method="post"> 
+   <form> 
+      <input type="radio" name="employee" value="12345678900">John Smith [12345678900]<br>
+<input type="radio" name="employee" value="12345678901">Emily Wilson [12345678901]<br>
+<input type="radio" name="employee" value="23456789012">Jacob Jones [23456789012]<br>
+<input type="radio" name="employee" value="34567890123">Olivia Davis [34567890123]<br>
+<input type="radio" name="employee" value="45678901234">William Brown [45678901234]<br>
+<input type="radio" name="employee" value="56789012345">Sophia Lee [56789012345]<br>
+<input type="radio" name="employee" value="67890123456">Daniel Garcia [67890123456]<br>
+<input type="radio" name="employee" value="78901234567">Ava Taylor [78901234567]<br>
+<input type="radio" name="employee" value="89012345678">Michael Martin [89012345678]<br>
+<input type="radio" name="employee" value="90123456789">Isabella Jackson [90123456789]<br>
+<input type="radio" name="employee" value="23456789011">Aiden Johnson [23456789011]<br>
+<input type="radio" name="employee" value="34567890122">Charlotte Davis [34567890122]<br>
+<input type="radio" name="employee" value="45678901233">Liam Brown [45678901233]<br>
+<input type="radio" name="employee" value="56789012344">Olivia Smith [56789012344]<br>
+<input type="radio" name="employee" value="67890123455">Ethan Garcia [67890123455]<br>
+<input type="radio" name="employee" value="78901234566">Isabella Martin [78901234566]<br>
+<input type="radio" name="employee" value="89012345677">Mason Wilson [89012345677]<br>
+<input type="radio" name="employee" value="90123456788">Sophia Lee [90123456788]<br>
+<input type="radio" name="employee" value="10987654321">Megan Johnson [10987654321]<br>
+      <br>
+         <input type="submit" value = "Choose Employee">
+   </form> 
+   
+</body>
+</html>

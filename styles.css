@@ -1,0 +1,44 @@
+/* Set the background color of the body */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Center the h1 and change its color */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Add some margin and padding to the paragraphs */
+  p {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  
+  /* Add some margin and padding to the anchor tags */
+  a {
+    margin: 10px 0;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  /* Change the background color of the anchor tags on hover */
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Center the image */
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Center the h2 tags */
+  h2 {
+    text-align: center;
+  }
+  
